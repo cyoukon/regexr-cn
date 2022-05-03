@@ -217,7 +217,7 @@ export default class Reference {
 			tip = this.getVal(node, "tip") || this.getVal(node, "desc");
 			tip = this.fillTags(tip, token, this, 20);
 			if (token.type === "group") { label += " #" + token.num; }
-			label = "<b>" + label[0].toUpperCase() + label.substr(1) + ".</b> ";
+			label = "<b>" + label[0].toUpperCase() + label.substr(1) + "。</b> ";
 
 			if (token.error) {
 				tip += "<span class='warningtext'><span class='error warning'>WARNING: </span>" + this.getError(token.error, token) + "</span>";
@@ -250,7 +250,7 @@ export default class Reference {
 			s = (group.i !== undefined) ? text.substr(group.i, group.l) : group.s;
 			more = more || (s && s.length > 50);
 			str += (i > 0) ? "<br>" : "<hr>";
-			str += "<b>group #" + (i+1) + ": </b>" + Utils.shorten(s, 50, true, "i");
+			str += "<b>分组 #" + (i+1) + ": </b>" + Utils.shorten(s, 50, true, "i");
 		}
 		if (more) { str += "<br><span class='more'>点 详情 查看所有匹配</span>" }
 		return str;

@@ -298,7 +298,7 @@ o.kids = [
 		{
 		id:"escoctal",
 		label:"八进制转义",
-		desc:"八进制转义以<code>\\000</code>为开头。",
+		desc:"八进制转义的形式为<code>\\000</code>。",
 		ext:"数字值必须小于255(<code>\\377</code>)。", // PCRE profile adds to ext.
 		example:["\\251","RegExr is \u00A92014"],
 		token:"\\000"
@@ -525,7 +525,7 @@ o.kids = [
 		},
 		{
 		id:"possessive",
-		label: "占有型",
+		label: "贪婪",
 		desc:"令前面的量词贪婪，但不回溯。它会尽可能多地匹配字符，但不会为了匹配后面的标记而释放它。",
 		ext:"<p>例如 <code>/.*a/</code> 会匹配到 <code>aaa</code>, 但 <code>/.*+a/</code> 则不会。因为重复的<code>.</code>会匹配、但不会为了匹配最后一个字符<code>a</code>而释放。</p>",
 		token:"+"

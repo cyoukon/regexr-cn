@@ -259,7 +259,7 @@ export default class Text extends EventDispatcher {
 				str += this._emptyCount  ? ", 其中 "+this._emptyCount+" 空结果(未显示 \"*\")。" : "。";
 				let cm = this.editor, sel = cm.listSelections()[0], pos = sel.head;
 				let i0 = cm.indexFromPos(pos), i1=cm.indexFromPos(sel.anchor), range=Math.abs(i0-i1);
-				str += "<hr>插入点：  "+pos.line+", 行 "+pos.ch+"列, 下表 "+i0;
+				str += "<hr>插入点：  "+pos.line+", 行 "+pos.ch+"列, 下标 "+i0;
 				str += (range>0 ? " (已选中"+range+" 字符)" : "");
 			}
 		}
