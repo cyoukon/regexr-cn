@@ -3,6 +3,13 @@
 RegExr
 ======
 
+RegExr: 学习、构建 和 测试 正则表达式。
+
+原仓库：https://github.com/gskinner/regexr
+中文本地化仓库：https://github.com/skys215/regexr-cn
+
+增加了自动构建和推送docker镜像的功能
+
 # About
 [RegExr.com](http://regexr.com/) is an online tool to learn, build, and test Regular Expressions. It was created by [Grant Skinner](http://twitter.com/gskinner) and the nice people at [gskinner.com](http://gskinner.com/).
 
